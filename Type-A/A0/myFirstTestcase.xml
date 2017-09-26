@@ -1,0 +1,409 @@
+<!--
+  Copyright (c) 2009-2015  Glen Berseth, Mubbasir Kapadia, Shawn Singh, Petros Faloutsos, Glenn Reinman
+  See license.txt for complete license.
+--><!--
+  Copyright (c) 2009 Shawn Singh, Mubbasir Kapadia, Petros Faloutsos, Glenn Reinman
+  See license.txt for complete license.
+-->
+
+<SteerBenchTestCase xmlns="http://www.magix.ucla.edu/steerbench"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.magix.ucla.edu/steerbench 
+                                        TestCaseSchema.xsd">
+
+  <header>
+    <version>1.0</version>
+    <name>myFirstTestcase</name>
+    <worldBounds>
+      <xmin>-100</xmin>
+      <xmax>100</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>-100</zmin>
+      <zmax>100</zmax>
+    </worldBounds>
+  </header>
+  
+  <suggestedCameraView>
+    <position> <x>80</x> <y>50</y> <z>10</z> </position>
+    <lookat> <x>20</x> <y>0</y> <z>10</z> </lookat>
+    <up> <x>0</x> <y>1</y> <z>0</z> </up>
+    <fovy>45</fovy>
+  </suggestedCameraView>
+  
+<!--main building body-->
+  <obstacle><!--north wall-->
+    <xmin>0</xmin>
+    <xmax>1</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>0</zmin>
+    <zmax>34</zmax>
+  </obstacle>
+  
+  <obstacle><!--east wall-->
+    <xmin>0</xmin>
+    <xmax>33</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>0</zmin>
+    <zmax>1</zmax>
+  </obstacle>
+  
+  <obstacle><!--south wall-->
+    <xmin>35</xmin>
+    <xmax>36</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>20</zmin>
+    <zmax>34</zmax>
+  </obstacle>
+  
+  <obstacle><!--upper west wall-->
+    <xmin>5</xmin>
+    <xmax>21</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>34</zmax>
+  </obstacle>
+  
+  <obstacle><!--middle west wall-->
+    <xmin>23</xmin>
+    <xmax>28</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>34</zmax>
+  </obstacle>
+  
+  <obstacle><!--lower west wall-->
+    <xmin>30</xmin>
+    <xmax>36</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>34</zmax>
+  </obstacle>
+  
+<!--room A-->
+  <obstacle><!--north wall-->
+    <xmin>35</xmin>
+    <xmax>36</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>-15</zmin>
+    <zmax>1</zmax>
+  </obstacle>
+  
+  <obstacle><!--east wall-->
+    <xmin>35</xmin>
+    <xmax>48</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>-16</zmin>
+    <zmax>-15</zmax>
+  </obstacle>
+  
+  <obstacle><!--south wall-->
+    <xmin>47</xmin>
+    <xmax>48</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>-15</zmin>
+    <zmax>6</zmax>
+  </obstacle>
+  
+  <obstacle><!--lower west wall-->
+    <xmin>40</xmin>
+    <xmax>48</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>5</zmin>
+    <zmax>6</zmax>
+  </obstacle>
+  
+  <obstacle><!--upper west wall-->
+    <xmin>35</xmin>
+    <xmax>38</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>5</zmin>
+    <zmax>6</zmax>
+  </obstacle>
+  
+<!--room D-->
+  <obstacle><!--left north wall-->
+    <xmin>35</xmin>
+    <xmax>36</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>12</zmin>
+    <zmax>20</zmax>
+  </obstacle>
+  
+  <obstacle><!--right north wall-->
+    <xmin>35</xmin>
+    <xmax>36</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>5</zmin>
+    <zmax>10</zmax>
+  </obstacle>
+  
+  <obstacle><!--west wall-->
+    <xmin>35</xmin>
+    <xmax>45</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>20</zmin>
+    <zmax>21</zmax>
+  </obstacle>
+  
+  <obstacle><!--south wall-->
+    <xmin>45</xmin>
+    <xmax>46</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>5</zmin>
+    <zmax>21</zmax>
+  </obstacle>
+  
+<!--room E-->
+  <obstacle><!--north wall-->
+    <xmin>27</xmin>
+    <xmax>28</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>-15</zmin>
+    <zmax>1</zmax>
+  </obstacle>
+  
+  <obstacle><!--east wall-->
+    <xmin>27</xmin>
+    <xmax>35</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>-16</zmin>
+    <zmax>-15</zmax>
+  </obstacle>
+
+<!--room C-->
+  <obstacle><!--north wall-->
+    <xmin>6</xmin>
+    <xmax>7</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>6</zmin>
+    <zmax>28</zmax>
+  </obstacle>
+  
+  <obstacle><!--east wall-->
+    <xmin>6</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>6</zmin>
+    <zmax>7</zmax>
+  </obstacle>
+  
+  <obstacle><!--left south wall-->
+    <xmin>25</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>23</zmin>
+    <zmax>28</zmax>
+  </obstacle>
+  
+  <obstacle><!--middle south wall-->
+    <xmin>25</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>14</zmin>
+    <zmax>20</zmax>
+  </obstacle>
+  
+  <obstacle><!--right south wall-->
+    <xmin>25</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>6</zmin>
+    <zmax>11</zmax>
+  </obstacle>
+  
+  <obstacle><!--west wall-->
+    <xmin>6</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>27</zmin>
+    <zmax>28</zmax>
+  </obstacle>
+  
+<!--room B-->
+  <obstacle><!--north wall-->
+    <xmin>17</xmin>
+    <xmax>18</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>45</zmax>
+  </obstacle>
+  
+  <obstacle><!--right middle wall-->
+    <xmin>25</xmin>
+    <xmax>26</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>40</zmax>
+  </obstacle>
+  
+  <obstacle><!--south wall-->
+    <xmin>32</xmin>
+    <xmax>33</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>33</zmin>
+    <zmax>45</zmax>
+  </obstacle>
+  
+  <obstacle><!--west wall-->
+    <xmin>17</xmin>
+    <xmax>33</xmax>
+    <ymin>0</ymin>
+    <ymax>1</ymax>
+    <zmin>44</zmin>
+    <zmax>45</zmax>
+  </obstacle>
+ 
+<!--agents-->
+	<agentRegion><!--Room A-->
+    <numAgents>10</numAgents>
+    <regionBounds>
+      <xmin>37</xmin>
+      <xmax>46</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>-13</zmin>
+      <zmax>5</zmax>
+    </regionBounds>
+    <initialConditions>
+      <direction> <random>true</random> </direction>
+      <radius>0.5</radius>
+      <speed>0</speed>
+    </initialConditions>
+    <goalSequence>
+      <seekStaticTarget>
+        <targetLocation> <x>3</x> <y>0</y> <z>37</z> </targetLocation>
+        <desiredSpeed>1.3</desiredSpeed>
+        <timeDuration>1000.0</timeDuration>
+      </seekStaticTarget>
+    </goalSequence>
+
+  </agentRegion>
+
+	<agentRegion><!--Room B bottom-->
+    <numAgents>4</numAgents>
+    <regionBounds>
+      <xmin>27</xmin>
+      <xmax>31</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>35</zmin>
+      <zmax>40</zmax>
+    </regionBounds>
+    <initialConditions>
+      <direction> <random>true</random> </direction>
+      <radius>0.5</radius>
+      <speed>0</speed>
+    </initialConditions>
+    <goalSequence>
+      <seekStaticTarget>
+        <targetLocation> <x>3</x> <y>0</y> <z>37</z> </targetLocation>
+        <desiredSpeed>1.3</desiredSpeed>
+        <timeDuration>1000.0</timeDuration>
+      </seekStaticTarget>
+    </goalSequence>
+	
+	</agentRegion>
+	
+	<agentRegion><!--Room C-->
+    <numAgents>7</numAgents>
+    <regionBounds>
+      <xmin>20</xmin>
+      <xmax>26</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>10</zmin>
+      <zmax>28</zmax>
+    </regionBounds>
+    <initialConditions>
+      <direction> <random>true</random> </direction>
+      <radius>0.5</radius>
+      <speed>0</speed>
+    </initialConditions>
+    <goalSequence>
+      <seekStaticTarget>
+        <targetLocation> <x>3</x> <y>0</y> <z>37</z> </targetLocation>
+        <desiredSpeed>1.3</desiredSpeed>
+        <timeDuration>1000.0</timeDuration>
+      </seekStaticTarget>
+    </goalSequence>
+
+  </agentRegion>
+
+	<agentRegion><!--Room D-->
+    <numAgents>5</numAgents>
+    <regionBounds>
+      <xmin>37</xmin>
+      <xmax>44</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>7</zmin>
+      <zmax>18</zmax>
+    </regionBounds>
+    <initialConditions>
+      <direction> <random>true</random> </direction>
+      <radius>0.5</radius>
+      <speed>0</speed>
+    </initialConditions>
+    <goalSequence>
+      <seekStaticTarget>
+        <targetLocation> <x>3</x> <y>0</y> <z>37</z> </targetLocation>
+        <desiredSpeed>1.3</desiredSpeed>
+        <timeDuration>1000.0</timeDuration>
+      </seekStaticTarget>
+    </goalSequence>
+
+  </agentRegion>
+
+	<agentRegion><!--Room E-->
+    <numAgents>4</numAgents>
+    <regionBounds>
+      <xmin>29</xmin>
+      <xmax>33</xmax>
+      <ymin>0</ymin>
+      <ymax>0</ymax>
+      <zmin>0</zmin>
+      <zmax>-13</zmax>
+    </regionBounds>
+    <initialConditions>
+      <direction> <random>true</random> </direction>
+      <radius>0.5</radius>
+      <speed>0</speed>
+    </initialConditions>
+    <goalSequence>
+      <seekStaticTarget>
+        <targetLocation> <x>3</x> <y>0</y> <z>37</z> </targetLocation>
+        <desiredSpeed>1.3</desiredSpeed>
+        <timeDuration>1000.0</timeDuration>
+      </seekStaticTarget>
+    </goalSequence>
+
+  </agentRegion>
+
+</SteerBenchTestCase>

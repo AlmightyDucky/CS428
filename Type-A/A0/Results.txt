@@ -1,0 +1,8 @@
+i. Youtube video link: https://youtu.be/jfN000SXf3E
+ii. SteerBench scores:
+	simpleAI: 32.9781 
+	pprAI: 53.9346
+iii. The agents in the simpleAI ignore any obstacles in their way and other 	agents. They simply move in a straight path towards their destination.
+iv. The problem with the simpleAI is that it has a one-track mind. The only thing it knows is that it has to move to a destination. It does it know whether there is anything or anybody in its way.
+v. The problems the simpleAI faces could be solved by giving the AI more information about its surroundings - information such as whether there are obstacles in the way or if there are other agents in the area that they could collide with.
+vi. Compared to simpleAI, the pprAI knows more information about its surroundings. It can detect whether there are obstacles or other agents in the way and react accordingly. The pprAI is not perfect however. Sometimes the pprAI takes a longer path to its destination rather than an obvious, shorter path. Other times the pprAI gets stuck inside a large space moving around randomly, attempting to find a way out.
